@@ -1,0 +1,119 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    background-image: url(imagenes/Img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color:rgb(11, 11, 11)
+}
+@media (max-width: 768px){
+header{
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+nav{
+    display: flex;
+    display: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav a{
+    margin: 5px 10px;
+}
+
+main{
+    padding: 20px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.caja-presentacion{
+    padding: 20px;
+}
+
+footer{
+    padding: 15px 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.ventana{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(249, 246, 246, 0.8);
+    margin: 30px auto;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding-top: 30px;
+}
+/* Tu ventana o caja que ya tienes hecha */
+.venta-img {
+    /* Agrega estas 4 líneas a la clase de tu ventana */
+    display: flex;
+    flex-wrap: wrap;       /* Esto hace que se acomoden lado a lado y bajen en celular */
+    gap: 20px;             /* Espacio entre tu imagen y tu texto */
+    align-items: center;   /* Los centra verticalmente */
+
+    /* (Conserva aquí los tamaños, fondos o anchos que ya le habías puesto a tu ventana) */
+}
+
+/* Y asegúrate de que tu imagen y tu texto dentro de la ventana tengan esto: */
+.venta-img img {
+    width: 100%;           /* En celular ocupa todo el ancho */
+    max-width: 250px;      /* En computadora se limita a este tamaño */
+    height: auto;
+}
+
+.venta-img .texto {
+    flex: 1;               /* Hace que el texto llene el espacio en PC y baje en celular */
+    min-width: 250px;      /* Evita que se aplaste de más */
+}
+.txt{
+    width: 92%;                 /* Ancho flexible para celulares */
+    max-width: 500px;           /* Límite máximo para computadoras */
+    margin: 20px auto;          
+    padding: 20px;            
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #100f0f;
+}
+/* El contenedor del botón tipo app */
+.boton-app {
+    display: flex;
+    flex-direction: column;    /* ¡AQUÍ ESTÁ LA CLAVE! Pone la imagen ARRIBA y el texto ABAJO */
+    align-items: center;       /* Centra la imagen y el texto horizontalmente */
+    justify-content: center;
+    gap: 8px;                  /* Espacio entre la imagen y el texto */
+    
+    width: 80px;               /* Ancho fijo cuadrado tipo app */
+    padding: 10px;
+    text-decoration: none;     /* Quita la línea azul del enlace */
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* La imagen redondeada como ícono de aplicación */
+.boton-app img {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;       /* Esquinas redondeadas como app moderna */
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para que resalte */
+    transition: transform 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.boton-app:hover img {
+    transform: scale(1.08);    /* Hace que la app brinque un poquito al pasar el cursor */
+}
+}
