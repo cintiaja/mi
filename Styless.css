@@ -39,6 +39,7 @@ h1{
 footer{
     padding: 15px 20px;
 }
+}
 
 img{
     max-width: 100%;
@@ -120,5 +121,4 @@ img{
     text-align: center;
     font-size: 40px;
     color: rgb(38, 58, 99);
-}
 }
