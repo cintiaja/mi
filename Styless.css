@@ -116,4 +116,9 @@ img{
 .boton-app:hover img {
     transform: scale(1.08);    /* Hace que la app brinque un poquito al pasar el cursor */
 }
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(38, 58, 99);
+}
 }
