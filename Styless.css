@@ -55,70 +55,75 @@ img{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     padding-top: 30px;
 }
-/* Tu ventana o caja que ya tienes hecha */
-.venta-img {
-    /* Agrega estas 4 líneas a la clase de tu ventana */
-    display: flex;
-    flex-wrap: wrap;       /* Esto hace que se acomoden lado a lado y bajen en celular */
-    gap: 20px;             /* Espacio entre tu imagen y tu texto */
-    align-items: center;   /* Los centra verticalmente */
 
-    /* (Conserva aquí los tamaños, fondos o anchos que ya le habías puesto a tu ventana) */
+.venta-img {
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 20px;             
+    align-items: center;   
+
+    
 }
 
-/* Y asegúrate de que tu imagen y tu texto dentro de la ventana tengan esto: */
+
 .venta-img img {
-    width: 100%;           /* En celular ocupa todo el ancho */
-    max-width: 250px;      /* En computadora se limita a este tamaño */
+    width: 100%;           
+    max-width: 250px;      
     height: auto;
 }
 
 .venta-img .texto {
-    flex: 1;               /* Hace que el texto llene el espacio en PC y baje en celular */
-    min-width: 250px;      /* Evita que se aplaste de más */
+    flex: 1;               
+    min-width: 250px;      
 }
 .txt{
-    width: 92%;                 /* Ancho flexible para celulares */
-    max-width: 500px;           /* Límite máximo para computadoras */
+    width: 92%;                 
+    max-width: 500px;           
     margin: 20px auto;          
     padding: 20px;            
     background-color: #ffffff;
     border-radius: 8px;
     border: 1px solid #100f0f;
 }
-/* El contenedor del botón tipo app */
+
 .boton-app {
     display: flex;
-    flex-direction: column;    /* ¡AQUÍ ESTÁ LA CLAVE! Pone la imagen ARRIBA y el texto ABAJO */
-    align-items: center;       /* Centra la imagen y el texto horizontalmente */
-    justify-content: center;
-    gap: 8px;                  /* Espacio entre la imagen y el texto */
+    flex-direction:column;    
+    align-items: center;       
+    justify-content:left;
+    gap: 8px;                  
     
-    width: 80px;               /* Ancho fijo cuadrado tipo app */
+    width: 80px;               
     padding: 10px;
-    text-decoration: none;     /* Quita la línea azul del enlace */
+    text-decoration: none;     
     color: #333;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+    margin: 30px;
 }
 
-/* La imagen redondeada como ícono de aplicación */
+
 .boton-app img {
     width: 60px;
     height: 60px;
-    border-radius: 14px;       /* Esquinas redondeadas como app moderna */
+    border-radius: 14px;       
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para que resalte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: transform 0.2s ease;
 }
 
-/* Efecto al pasar el mouse */
+
 .boton-app:hover img {
-    transform: scale(1.08);    /* Hace que la app brinque un poquito al pasar el cursor */
+    transform: scale(1.08);    
 }
 .titulo{
     text-align: center;
     font-size: 40px;
     color: rgb(38, 58, 99);
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
 }
